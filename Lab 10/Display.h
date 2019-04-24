@@ -10,6 +10,8 @@
 #define Display_h
 
 
+#include "DrawOpenGL.h"
+
 #define DISPLAY_WIDTH 128
 #define DISPLAY_HEIGHT 160
 
@@ -23,9 +25,15 @@
 
 
 struct Color{
-    Color(): Color(0,0,0){
+    Color() {
+        r = 0;
+        g = 0;
+        b = 0;
     }
-    Color(uint8_t r_, uint8_t g_, uint8_t b_): r(r_),g(g_),b(b_) {
+    Color(uint8_t r_, uint8_t g_, uint8_t b_){
+        r = r_;
+        g = g_;
+        b = b_;
     }
     
     uint8_t r, g, b;
@@ -51,8 +59,11 @@ Color getColor(int x, int y){
     return pixels[x][y];
 }
 
+void drawPixel(int,int);
+
 void setColor(int x, int y, Color col){
     pixels[x][y] = col;
+    //drawPixel(x, y);
 }
 
 

@@ -42,7 +42,7 @@ public:
         }
     }
     
-    Matrix3x3 mul(const Matrix3x3& another){
+    Matrix3x3 mul(const Matrix3x3& another) {
         Matrix3x3 result;
         
         result.matrix[0][0] = matrix[0][0]*another.matrix[0][0] + matrix[0][1]*another.matrix[1][0] + matrix[0][2]*another.matrix[2][0];
@@ -68,7 +68,7 @@ public:
         
         return result;
     }
-    Vector3D mul(const Vector3D& vec){
+    Vector3D mul(const Vector3D& vec) {
         float xx = matrix[0][0]*vec.x()+matrix[0][1]*vec.y()+matrix[0][2]*vec.z();
         float yy = matrix[1][0]*vec.x()+matrix[1][1]*vec.y()+matrix[1][2]*vec.z();
         float zz = matrix[2][0]*vec.x()+matrix[2][1]*vec.y()+matrix[2][2]*vec.z();

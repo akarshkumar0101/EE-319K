@@ -52,6 +52,13 @@ public:
         return vect;
     }
     
+    float component(const Vector3D& base) const {
+        return dot(base)/base.len();
+    }
+    Vector3D project(const Vector3D& base) const{
+        return base.normalize().scale(component(base));
+    }
+    
     Vector3D cross(const Vector3D& vect) const{
         float xx = y() * vect.z() - z() * vect.y();
         float yy = z() * vect.x() - x() * vect.z();
@@ -88,9 +95,9 @@ std::ostream& operator<<(std::ostream& os, const Vector3D& v)
     return os;
 }
 
-Vector3D xhat = Vector3D(1,0,0);
-Vector3D yhat = Vector3D(0,1,0);
-Vector3D zhat = Vector3D(0,0,1);
+const Vector3D xhat(1,0,0);
+const Vector3D yhat(0,1,0);
+const Vector3D zhat(0,0,1);
 
 
 

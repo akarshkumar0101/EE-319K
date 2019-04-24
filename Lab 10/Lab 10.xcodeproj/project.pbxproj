@@ -31,6 +31,7 @@
 		C2A218AF226E4C1B009C8D1E /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		C2A218B0226E64A1009C8D1E /* Matrix3x3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matrix3x3.h; sourceTree = "<group>"; };
 		C2A218B1226E7181009C8D1E /* VectorMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VectorMath.h; sourceTree = "<group>"; };
+		C2A218B2226FE05C009C8D1E /* DrawOpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawOpenGL.h; sourceTree = "<group>"; };
 		C2E81971226E206E00BDB4A0 /* Lab 10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 10"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E81974226E206E00BDB4A0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C2E81982226E270000BDB4A0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -57,6 +58,7 @@
 				C2A218B1226E7181009C8D1E /* VectorMath.h */,
 				C2A218AE226E4A1B009C8D1E /* Camera.h */,
 				C2A218AD226E49E4009C8D1E /* Display.h */,
+				C2A218B2226FE05C009C8D1E /* DrawOpenGL.h */,
 				C2A218AC226E49BF009C8D1E /* Vector3D.h */,
 				C2A218B0226E64A1009C8D1E /* Matrix3x3.h */,
 				C2E81988226E374E00BDB4A0 /* Math.h */,
@@ -261,8 +263,10 @@
 		C2E81979226E206E00BDB4A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LN5LS5S85;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -275,8 +279,10 @@
 		C2E8197A226E206E00BDB4A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LN5LS5S85;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

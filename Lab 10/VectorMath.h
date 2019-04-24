@@ -9,7 +9,6 @@
 #ifndef VectorMath_h
 #define VectorMath_h
 
-
 #include "Math.h"
 #include "Vector3D.h"
 #include "Matrix3x3.h"
@@ -59,5 +58,15 @@ void intersectLinePlanePlaneCoordinateSystem(const Vector3D& linePos, const Vect
         *out_intersectPoint = intersectPoint;
     }
 }
+
+float lineLineDist(const Vector3D& a0, const Vector3D& aDir,const Vector3D& b0,const Vector3D& bDir){
+    const Vector3D n = aDir.cross(bDir);
+    if(n.len()==0){
+        
+    }
+    return 0;
+}
+
+
 
 #endif /* VectorMath_h */

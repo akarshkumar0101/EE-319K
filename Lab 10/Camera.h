@@ -15,12 +15,12 @@
 #include "Vector3D.h"
 #include "VectorMath.h"
 
-#define DEFAULT_VIEW_ANGLE_X 120*M_PI/180
-#define DEFAULT_VIEW_ANGLE_Y 120*M_PI/180
+#define DEFAULT_VIEW_ANGLE_X 80*M_PI/180
+#define DEFAULT_VIEW_ANGLE_Y 80*M_PI/180
 
 
 namespace Camera{
-    float viewAngleX = DEFAULT_VIEW_ANGLE_X, viewAngleY = DEFAULT_VIEW_ANGLE_Y;
+    const float viewAngleX = DEFAULT_VIEW_ANGLE_X, viewAngleY = DEFAULT_VIEW_ANGLE_Y;
     
     
     Vector3D pos(0,0,0);
@@ -48,11 +48,12 @@ namespace Camera{
     }
     
     
-    
+    float viewportDistance = 10;
     void establishViewPort(){
-        viewPortPos = pos+dir.normalize();
-        viewPortAvect = up.normalize().scale(tan(viewAngleY/2.0f));
-        viewPortBvect = right.normalize().scale(tan(viewAngleX/2.0f));
+        
+        viewPortPos = pos+dir.normalize().scale(viewportDistance);
+        viewPortAvect = up.normalize().scale(tan(viewAngleY/2.0f)).scale(viewportDistance);
+        viewPortBvect = right.normalize().scale(tan(viewAngleX/2.0f)).scale(viewportDistance);
     }
     
     Vector3D getPixelRayWithViewPort(float x, float y){
