@@ -1,0 +1,7 @@
+Dependencies for Project 'Exam2_DataBase', Target 'Exam2': (DO NOT MODIFY !)
+F (.\Startup.s)(0x54543B72)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Exam2-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\LM3S_DFP\1.1.0\Device\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "LM3S1968 SETA 1"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Exam2.c)(0x5C9E8BA1)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --signed_chars --C99-I.\RTE\_Exam2-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\LM3S_DFP\1.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DLM3S1968-o .\exam2.o --omf_browse .\exam2.crf --depend .\exam2.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599FA01E)
+F (.\pll.o)(0x54542716)()
+F (.\uart.o)(0x54542716)()
+F (.\main.o)(0x545508FE)()

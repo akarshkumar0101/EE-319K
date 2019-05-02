@@ -1,0 +1,8 @@
+Dependencies for Project 'Exam2_ArrayofStruct', Target 'Exam2': (DO NOT MODIFY !)
+F (.\Startup.s)(0x54542D62)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Exam2-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\LM3S_DFP\1.1.0\Device\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "LM3S1968 SETA 1"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Exam2asm.s)(0x5CA78E61)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Exam2-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\LM3S_DFP\1.1.0\Device\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "LM3S1968 SETA 1"--list .\exam2asm.lst --xref -o .\exam2asm.o --depend .\exam2asm.d)
+F (.\Exam2CPart.c)(0x5CA7933D)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --signed_chars --C99-I.\RTE\_Exam2-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\LM3S_DFP\1.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DLM3S1968-o .\exam2cpart.o --omf_browse .\exam2cpart.crf --depend .\exam2cpart.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599FA01E)
+F (.\pll.o)(0x5AC6797A)()
+F (.\uart.o)(0x5AC6799C)()
+F (.\exam2stringconversions.o)(0x5AC6DB56)()

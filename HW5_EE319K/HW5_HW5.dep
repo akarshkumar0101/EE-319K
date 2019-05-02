@@ -1,0 +1,5 @@
+Dependencies for Project 'HW5', Target 'HW5': (DO NOT MODIFY !)
+F (.\startup.s)(0x519ADEE4)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_HW5-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "LM4F120 SETA 1"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\HW5.c)(0x5C7EC290)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I .. -I ..\..\.. --C99-I.\RTE\_HW5-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DLM4F120 -Drvmdk -DPART_LM4F120H5QR-o .\hw5.o --omf_browse .\hw5.crf --depend .\hw5.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599FA01E)
+F (.\hw5grader.o)(0x5C491C68)()
