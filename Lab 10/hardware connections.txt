@@ -1,0 +1,25 @@
+LCD ST7735
+
+LED- GND
+LED+ 5V
+CS PA3
+SC PA2
+SDA PA5
+A0 PA6
+RESET PA7
+NVC 3.3V
+GND GND
+
+
+Buttons:
+B6 B7
+
+DAC:
+B0-B5
+
+ADC:
+E2, E3, E4, E5
+
+
+
+LCD
